@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rathi Mitra</string>
+    <string name="enter_id">Enter Id</string>
+    <string name="you_are_not_a_member_register">You are not a member? <font color="#F11414"> Register</font> </string>
+    <string name="have_account">Already have account? <font color="#F11414"><u>Login here</u> </font> </string>
+    <string name="please_enter_the_otp_sent_to_your_mobile_number">Please enter the OTP sent to your mobile number</string>
+    <string name="do_not_share_this_one_time_password_with_anybody">Do not share this one time password with anybody !</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="time_left_1_41">Time left: 1:41</string>
+    <string name="submit">Submit</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

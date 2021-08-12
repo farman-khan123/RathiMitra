@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.WalletFragment">
+
+    <include
+        layout="@layout/custom_tool_bar_second"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/coin"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Minimum wallet amount is Rs. 0"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="@dimen/space_16dp"
+        android:layout_toLeftOf="@id/serial_num"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:id="@+id/wallet_imge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coins_wallet"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyProfileFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_tool_bar_second"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/rel_update">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/space_16dp"
+        android:layout_marginRight="@dimen/space_16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_imge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/men_img"
+            android:layout_marginEnd="@dimen/space_16dp"/>
+        <ImageView
+            android:id="@+id/edit_img"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="@dimen/space_20dp"
+            android:src="@drawable/edit_corner_bg"
+            android:layout_alignEnd="@id/user_imge"
+            android:layout_alignBottom="@+id/user_imge"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Your Name"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Enter your name"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="textPersonName"
+            android:drawablePadding="@dimen/space_10dp"
+            android:drawableEnd="@drawable/drawable_editor_bg_second"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Mobile Number"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_mobile_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Enter mobile number"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:drawablePadding="@dimen/space_10dp"
+            android:drawableEnd="@drawable/drawable_editor_bg_second"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Your ID"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Enter your ID"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="@dimen/space_10dp"
+            android:drawableEnd="@drawable/drawable_editor_bg_second"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Password"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Enter Password"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="text"
+            android:drawablePadding="@dimen/space_10dp"
+            android:drawableEnd="@drawable/drawable_editor_bg_second"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Bank Details"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/et_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Enter bank details"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="text"
+            android:drawablePadding="@dimen/space_10dp"
+            android:drawableEnd="@drawable/drawable_editor_bg_second"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Aadhar card verification"
+            android:textSize="@dimen/space_18sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_aadhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:background="@drawable/drawable_shadow_bg"
+            android:hint="Upload a Aadhar photo"
+            android:paddingHorizontal="@dimen/space_12dp"
+            android:paddingVertical="@dimen/space_16dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/space_16sp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_update"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/space_10dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/drawbale_rectangle_white_bg"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Update"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
